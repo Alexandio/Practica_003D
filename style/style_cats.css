@@ -18,3 +18,7 @@
   clear: both;
   display: table;
 }
+.contaiter{
+  display: flex;
+  
+}
