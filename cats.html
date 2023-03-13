@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_cats.css">
-    <title>Gatos</title>
+    <title>Ayuda un gato</title>
+    <nav>
+      <a href="home.html" style="display: inline-block;">Inicio</a>
+      <a href="perros.html" style="display: inline-block;">Perros</a>
+      <a href="cats.html" style="display: inline-block;">Gatos</a>
+    </nav>
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <style>
+      .container {
+        display: flex;
+      }
+    </style>
     <br>
     <h1 align="center" style="margin-bottom: 2%;">GATOS EN ADOPCIÓN</h1>
     <p class="text-justify" align="center" style="margin: 6%; margin-bottom: 2%;">
@@ -15,29 +24,20 @@
     </p>
     <hr></hr>
     <h2 align="center">Nuestros Gatos buscan famila:</h2>
-    <div class="row">
-        <div class="columm">
-          <img src="imagenes/g_ginger.png" height="35%" width="35%">
-        </div>
-        <div class="columm">
-          <a href="ginger.html">This is a beautiful picture.</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="columm">
-          <img src="imagenes/g_tommy.png" height="35%" width="35%">
-        </div>
-        <div class="columm">
-          <a href="ginger.html">This is a beautiful picture.</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="columm">
-          <img src="imagenes/g_lucifer.png" height="35%" width="35%">
-        </div>
-        <div class="columm">
-          <a href="ginger.html">This is a beautiful picture.</a>
-        </div>
+    <!--
+      Gatos
+    -->
+    <div class="container">
+      <img src="imagenes/g_ginger.png" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
+      <a href="gato a.html" style="margin-top: 2%; font-size: larger;"><p>Ginger</p></a>
+    </div> <br>
+    <div class="container">
+      <img src="imagenes/g_tommy.png" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
+      <a href="gato b.html" style="margin-top: 2%; font-size: larger;"><p>Tommy</p></a>
+    </div> <br>
+    <div class="container">
+      <img src="imagenes/g_lucifer.png" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
+      <a href="gato c.html" style="margin-top: 2%; font-size: larger;"><p>Lucifer</p></a>
     </div>
 </body>
 </html>

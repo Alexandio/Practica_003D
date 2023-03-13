@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayuda un perro</title>
+    <nav>
+      <a href="home.html" style="display: inline-block;">Inicio</a>
+      <a href="perros.html" style="display: inline-block;">Perros</a>
+      <a href="cats.html" style="display: inline-block;">Gatos</a>
+    </nav>
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <style>
+    .container {
+      display: flex;
+    }
+    </style>
+
     <br>
     <h1 align="center" style="margin-bottom: 2%;">PERROS EN ADOPCIÓN</h1>
     <p class="text-justify" align="center" style="margin: 6%; margin-bottom: 2%;">
@@ -14,29 +25,20 @@
     </p>
     <hr></hr>
     <h2 align="center">Nuestros Perros buscan famila:</h2> 
-    <div class="row">
-        <div class="columm">
-          <img src="imagenes/Perro_a.jpg" height="35%" width="35%">
-        </div>
-        <div class="columm">
-          <a href="perro a.html">Jorge</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="columm">
-          <img src="imagenes/perro_b.jpg" height="35%" width="35%">
-        </div>
-        <div class="columm">
-          <a href="Perro b.html">Javiera</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="columm">
-          <img src="imagenes/Perro_c.jpg" height="35%" width="35%">
-        </div>
-        <div class="columm">
-          <a href="Perro C.html">Bepis</a>
-        </div>
-    </div>   
+    
+    <div class="container">
+      <img src="imagenes/Perro_a.jpg" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
+      <a href="perro a.html" style="margin-top: 2%; font-size: larger;"><p>Jorge</p></a>
+    </div> <br>
+
+    <div class="container">
+      <img src="imagenes/perro_b.jpg" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
+      <a href="Perro b.html" style="margin-top: 2%; font-size: larger;"><p>Javiera</p></a>
+    </div> <br>
+
+    <div class="container">
+      <img src="imagenes/Perro_c.jpg" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
+      <a href="Perro C.html" style="margin-top: 2%; font-size: larger;"><p>Bepis</p></a>
+    </div> <br>
 </body>
 </html>
