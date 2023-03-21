@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <title>Ayuda un perro</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda un perro</title>
-    <nav>
-        <a href="home.html" style="display: inline-block;">Inicio</a>
-        <a href="perros.html" style="display: inline-block;">Perros</a>
-        <a href="cats.html" style="display: inline-block;">Gatos</a>
-      </nav>
-</head>
-<body style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- CSS -->
+    <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
+    <link rel="stylesheet" href="/style/Style.css">
+
+    <!-- Origen de los colores generales de la pagina -->
+    <link rel="stylesheet" href="/style/Style-Colors.css">
+
+    <!-- Origen de los temas de colores para los contenedores -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+    <!-- Archivo de origen de la fuente de la pagina -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+    <!-- Archivo de origen de los iconos usadors en el segmento de Contac US -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .container{
-            display: flex;
-            margin-left: 6%;
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .menu {
+            display: none;
         }
     </style>
-    <center>
-        <H2 >ONG-AYUDA UN PERRO</H2>
-        <hr>
-    </center>
-    <div class="container">
-        <img src="imagenes/Perro_a.jpg" alt="imagen no encontrada" style="width: 20%;">
-        <p style="margin: 6%; text-align: justify;">Nombre: Jorge 
-            <br> Edad: 1 año 2 meses 
-            <br> Genero: Macho
-            <br> Esterilizado: No
-            <br> Numero de ship: 19827397123123
-        </p>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top">
+        <div class="row padding brown">
+            <div class="col s2">
+                <a href="/home.html" class="button block brown">HOME</a>
+            </div>
+            <div class="col s2">
+                <a href="#perros" class="button block brown">PERROS</a>
+            </div>
+            <div class="col s2">
+                <a href="cats.html" class="button block brown">GATOS</a>
+            </div>
+            <div class="col s2">
+                <a href="#contactanos" class="button block brown">CONTACTANOS</a>
+            </div>
+        </div>
+    </div>
+    <div class="container center padding-64">
+        <h3>
+            <span class="tag wide brown">
+                ONG-AYUDA UN PERRO
+            </span>
+        </h3>
+    </div>
+    <div class="row-padding padding-32 w3-theme-l1">
+        <div class="half ">
+            <div class="white card">
+                <img src="/imagenes/Perro_a.jpg" alt="imagen no encontrada" style="width: 100%;"">
+            </div>
+        </div>
+        <div class="half">
+            <div class="white card">
+                <div class="container left-align-small">
+                    <p>Nombre: Jorge</p>
+                    <p>Edad: 1 año 2 meses</p>
+                    <p>Genero: Macho</p>
+                    <p>Esterilizado: No</p>
+                    <p>Numero de Chip: 19827397123123</p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
