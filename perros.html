@@ -1,44 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda un perro</title>
-    <nav>
-      <a href="home.html" style="display: inline-block;">Inicio</a>
-      <a href="perros.html" style="display: inline-block;">Perros</a>
-      <a href="cats.html" style="display: inline-block;">Gatos</a>
-    </nav>
-</head>
-<body style="font-family: Arial, Helvetica, sans-serif;">
-    <style>
-    .container {
-      display: flex;
+  <title>Ayuda un perro</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
+  <link rel="stylesheet" href="style/Style.css">
+
+  <!-- Origen de los colores generales de la pagina -->
+  <link rel="stylesheet" href="style/Style-Colors.css">
+
+  <!-- Origen de los temas de colores para los contenedores -->
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+  <!-- Archivo de origen de la fuente de la pagina -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+  <!-- Archivo de origen de los iconos usadors en el segmento de Contac US -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
     }
-    </style>
 
-    <br>
-    <h1 align="center" style="margin-bottom: 2%;">PERROS EN ADOPCIÓN</h1>
-    <p class="text-justify" align="center" style="margin: 6%; margin-bottom: 2%;">
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top">
+    <div class="row padding brown">
+      <div class="col s2">
+        <a href="home.html" class="button block brown">HOME</a>
+      </div>
+      <div class="col s2">
+        <a href="#perros" class="button block brown">PERROS</a>
+      </div>
+      <div class="col s2">
+        <a href="cats.html" class="button block brown">GATOS</a>
+      </div>
+      <div class="col s2">
+        <a href="#contactanos" class="button block brown">CONTACTANOS</a>
+      </div>
+    </div>
+  </div>
+  <!-- Top Text -->
+  <div class="container padding-top-64 center" id="perros">
+    <h2>
+      <span class="tag wide brown">
+        PERROS EN ADOPCIÓN
+      </span>
+    </h2>
+    <p class="justify">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </p>
-    <hr></hr>
-    <h2 align="center">Nuestros Perros buscan famila:</h2> 
-    
-    <div class="container">
-      <img src="imagenes/Perro_a.jpg" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
-      <a href="perro a.html" style="margin-top: 2%; font-size: larger;"><p>Jorge</p></a>
-    </div> <br>
+    <hr>
+    </hr>
+  </div>
+  <!-- Dog Container -->
+  <div class="container center margin-top">
+    <h4>
+      <span class="tag wide brown">
+        Nuestros Perros buscan famila
+      </span>
+    </h4>
+  </div>
+  <div class="container center margin-top row-padding">
 
-    <div class="container">
-      <img src="imagenes/perro_b.jpg" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
-      <a href="Perro b.html" style="margin-top: 2%; font-size: larger;"><p>Javiera</p></a>
-    </div> <br>
+    <div class="third">
+      <a href="Dogs/perro a.html">
+        <div class="card white">
+          <img src="imagenes/Perro_a.jpg" alt="No Image" style="width: 100%;">
+          <div class="container">
+            <h5>Jorge</h5>
+          </div>
+        </div>
+      </a>
+    </div>
 
-    <div class="container">
-      <img src="imagenes/Perro_c.jpg" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
-      <a href="Perro C.html" style="margin-top: 2%; font-size: larger;"><p>Bepis</p></a>
-    </div> <br>
+    <div class="third">
+      <a href="Dogs/Perro b.html">
+        <div class="card white">
+          <img src="imagenes/perro_b.jpg" alt="No Image" style="width: 100%;">
+          <div class="container">
+            <h5>Javiera</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="third">
+      <a href="Dogs/Perro c.html">
+        <div class="card white">
+          <img src="imagenes/Perro_c.jpg" alt="No Image" style="width: 100%;">
+          <div class="container">
+            <h5>Bepis</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Contact Us -->
+  <div class="container padding-64 w3-theme-l5 padding-left-64 padding-right-64" id="contactanos">
+    <div class="row">
+      <div class="col m5">
+        <div class="padding-16"><span class="xlarge border-brown bottombar">Contactanos</span></div>
+        <h3>Dirección</h3>
+        <p>Visit our center.</p>
+        <p><i class="fa fa-map-marker text-brown xlarge"></i>  Chicago, US</p>
+        <p><i class="fa fa-phone text-brown xlarge"></i>  +00 1515151515</p>
+        <p><i class="fa fa-envelope-o text-brown xlarge"></i>  test@test.com</p>
+      </div>
+      <div class="col m7">
+        <form class="container card-4 padding-16 white">
+          <div class="section">
+            <label>Name</label>
+            <input class="input" type="text" name="Name" required>
+          </div>
+          <div class="section">
+            <label>Email</label>
+            <input class="input" type="text" name="Email" required>
+          </div>
+          <div class="section">
+            <label>Message</label>
+            <input class="input" type="text" name="Message" required>
+          </div>
+          <input class="check" type="checkbox" checked name="Like">
+          <label>I Like it!</label>
+          <button type="submit" class="button right theme">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="container padding-32 w3-theme-d1 center">
+    <h4>Follow Us</h4>
+    <a class="button large brown" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="button large brown" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="button large brown" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="button large brown" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="button large brown hide-small" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <p>Powered by <a href="" target="_blank">Nosotros</a></p>
+  </footer>
 </body>
+
 </html>
