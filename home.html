@@ -1,46 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Ayuda a un peluo</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda a un peluo</title>
-    <nav>
-        <a href="home.html" style="display: inline-block;">Inicio</a>
-        <a href="perros.html" style="display: inline-block;">Perros</a>
-        <a href="cats.html" style="display: inline-block;">Gatos</a>
-      </nav>
-</head>
+    <!-- CSS -->
+    <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
+    <link rel="stylesheet" href="style/Style.css">
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- Origen de los colores generales de la pagina -->
+    <link rel="stylesheet" href="style/Style-Colors.css">
+
+    <!-- Origen de los temas de colores para los contenedores -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+    <!-- Archivo de origen de la fuente de la pagina -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+    <!-- Archivo de origen de los iconos usadors en el segmento de Contac US -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        .container {
-            display: flex;
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("imagenes/Dogg_Banner.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .border-text {
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
     </style>
+</head>
 
-    <center><h2>ONG - AYUDA A UN PELUDO</h2> </center>
-    <hr></hr>
-    <p style="margin: 6%; text-align: justify;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id donec ultrices. Scelerisque varius morbi enim nunc faucibus. Aenean pharetra magna ac placerat vestibulum. Elementum tempus egestas sed sed risus pretium quam. Et ultrices neque ornare aenean. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Mauris cursus mattis molestie a iaculis at erat pellentesque. Laoreet sit amet cursus sit amet dictum sit amet. Aliquet sagittis id consectetur purus ut faucibus. Pretium aenean pharetra magna ac placerat vestibulum. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis enim lobortis scelerisque fermentum dui. Porta nibh venenatis cras sed felis eget. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Massa vitae tortor condimentum lacinia quis. Pharetra massa massa ultricies mi quis hendrerit. Aenean sed adipiscing diam donec adipiscing tristique. Ut tristique et egestas quis ipsum suspendisse ultrices.</p>
-    
-    <center><h2>Nuestros Integrantes:</h2> </center>
-    <ul style="margin: 5%;">
-        <li>Persona 1 - Cargo 1</li>
-        <li>Persona 2 - Cargo 2</li>
-        <li>Persona 3 - Cargo 3</li>
-        <li>Persona n - Cargo n</li>
-    </ul>
-    
-    <center><h2>Nuestras Secciones de Ayuda:</h2> </center>
-    <div class="container">
-        <img src="imagenes/Perro_c.jpg" alt="No Image" style="margin: 6%;" width="15%"> 
-        <a href="perros.html" style="margin-top: 8%; font-size: larger;"><p>Perros</p></a>
-    </div>
-    <div class="container">
-        <img src="imagenes/g_ginger.png" alt="No Image" style="margin-left: 6%; margin-right: 6%;" width="15%"> 
-        <a href="cats.html" style="margin-top: 2%; font-size: larger;"><p>Gatos</p></a>
+<body>
+    <!-- Top Bar -->
+    <div class="top">
+        <div class="row padding brown">
+            <div class="col s2">
+                <a href="#home" class="button block brown">HOME</a>
+            </div>
+            <div class="col s2">
+                <a href="#sobre" class="button block brown">SOBRE</a>
+            </div>
+            <div class="col s2">
+                <a href="#equipo" class="button block brown">EQUIPO</a>
+            </div>
+            <div class="col s2">
+                <a href="#nsa" class="button block brown">NSA</a>
+            </div>
+            <div class="col s2">
+                <a href="#contactanos" class="button block brown">CONTACTANOS</a>
+            </div>
+        </div>
     </div>
 
+    <div class="sand grayscale large"></div>
+    <!-- Header with Dog Image-->
+    <header class="bgimg display-container grayscale-min" id="home">
+        <div class="display-bottomleft center padding-large hide-small">
+            <span class="tag brown">Abierto desde 8pm a 6pm</span>
+        </div>
+        <div class="display-right right-align cell-middle margin-right border-text">
+            <span class="text-white" style="font-size:90px">Ayuda A<br>Un Peludo</span>
+        </div>
+        <div class="display-bottomright center padding-large">
+            <span class="text-white tag brown">15 Adr street, 5015</span>
+        </div>
+    </header>
+    <!-- About Us Segment -->
+    <div class="container" id="sobre">
+        <div class="content" style="max-width:700px">
+            <h5 class="center padding-64">
+                <span class="tag wide brown">
+                    SOBRE NOSOTROS
+                </span>
+            </h5>
+            <p class="justify">
+                The insitution was founded in blabla by Mr. Silva in lorem ipsum dolor sit amet, consectetur adipiscing
+                elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="justify">
+                In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+                sandwiches, as well as a selection of sides and salads and other good stuff.
+            </p>
+            <img src="imagenes/Veterinary.jpg" alt="Image no found" style="width:100%;max-width:1000px"
+                class="margin-top ">
+        </div>
+    </div>
+    <!-- El Equipo -->
+    <div class="container padding-64 center" id="equipo">
+        <h5><span class="tag wide brown"> El Equipo </span></h5>
+        <p>Conoce al equipo:</p>
+        <div class="row"><br>
+            <div class="quarter">
+                <img src="imagenes/Team Images/Johnny_Joestar.jpg" alt="No found" style="width:45%"
+                    class="circle hover-opacity">
+                <h5><span class="tag wide brown"> Johnny Joestar </span></h5>
+                <p>Director</p>
+            </div>
+
+            <div class="quarter">
+                <img src="imagenes/Team Images/guts.jpg" alt="No found" style="width:45%" class="circle hover-opacity">
+                <h5><span class="tag wide brown"> Guts Berk </span></h5>
+                <p>Cargo 2</p>
+            </div>
+
+            <div class="quarter">
+                <img src="imagenes/Team Images/miyamoto_musashi.jpg" alt="No found" style="width:45%"
+                    class="circle hover-opacity">
+                <h5><span class="tag wide brown"> Miyamoto Musashi </span></h5>
+                <p>Cargo 3</p>
+            </div>
+
+            <div class="quarter">
+                <img src="imagenes/Team Images/spike.jpg" alt="No found" style="width:45%" class="circle hover-opacity">
+                <h5><span class="tag wide brown"> Spike Spiegel </span></h5>
+                <p>Cargo 4</p>
+            </div>
+        </div>
+    </div>
+    <!-- Nuestras Secciones de Ayuda -->
+    <div class="row-padding padding-64 w3-theme-l1" id="nsa">
+        <div class="third justify">
+            <h3>Nuestras Secciones de Ayuda</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="third">
+            <a href="perros.html">
+                <div class="card white">
+                    <img src="imagenes/Perro_a.jpg" alt="Snow" style="width:100%">
+                    <div class="container">
+                        <h4>Perros</h4>
+                        <h4>Cosas</h4>
+                        <p>Blablabla</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="third">
+            <a href="cats.html">
+                <div class="card white">
+                    <img src="imagenes/g_ginger.png" alt="Lights" style="width:100%">
+                    <div class="container">
+                        <h4>Gatos</h4>
+                        <h4>Cosas</h4>
+                        <p>Blablabla</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <!-- Contact Us -->
+    <div class="container padding-64 w3-theme-l5 padding-left-64 padding-right-64" id="contactanos">
+        <div class="row">
+            <div class="col m5">
+                <div class="padding-16"><span class="xlarge border-brown bottombar">Contactanos</span></div>
+                <h3>Dirección</h3>
+                <p>Visit our center.</p>
+                <p><i class="fa fa-map-marker text-brown xlarge"></i>  Chicago, US</p>
+                <p><i class="fa fa-phone text-brown xlarge"></i>  +00 1515151515</p>
+                <p><i class="fa fa-envelope-o text-brown xlarge"></i>  test@test.com</p>
+            </div>
+            <div class="col m7">
+                <form class="container card-4 padding-16 white">
+                    <div class="section">
+                        <label>Name</label>
+                        <input class="input" type="text" name="Name" required>
+                    </div>
+                    <div class="section">
+                        <label>Email</label>
+                        <input class="input" type="text" name="Email" required>
+                    </div>
+                    <div class="section">
+                        <label>Message</label>
+                        <input class="input" type="text" name="Message" required>
+                    </div>
+                    <input class="check" type="checkbox" checked name="Like">
+                    <label>I Like it!</label>
+                    <button type="submit" class="button right theme">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container padding-32 w3-theme-d1 center">
+        <h4>Follow Us</h4>
+        <a class="button large brown" title="Facebook"><i
+                class="fa fa-facebook"></i></a>
+        <a class="button large brown" title="Twitter"><i
+                class="fa fa-twitter"></i></a>
+        <a class="button large brown" title="Google +"><i
+                class="fa fa-google-plus"></i></a>
+        <a class="button large brown" title="Google +"><i
+                class="fa fa-instagram"></i></a>
+        <a class="button large brown hide-small" title="Linkedin"><i
+                class="fa fa-linkedin"></i></a>
+        <p>Powered by <a href="" target="_blank">Nosotros</a></p>
+    </footer>
 </body>
+
 </html>
