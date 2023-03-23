@@ -1297,6 +1297,11 @@ a {
     padding: 0 8px
 }
 
+.row-padding-12,
+.row-padding-12>.col {
+    padding: 0 12px;
+}
+
 .container,
 .panel {
     padding: 0.01em 16px
@@ -1329,12 +1334,12 @@ a {
     font-size: 110%
 }
 
-.card,
-.card-2 {
+.w-card,
+.w-card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
-.card-4,
+.w-card-4,
 .hover-shadow:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
 }
