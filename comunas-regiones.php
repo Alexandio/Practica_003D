@@ -1,7 +1,7 @@
 {
     "regiones": [
         {
-            "region": "Arica y Parinacota",
+            "region": "Arica y Parinacota Benjamin",
             "comunas": ["Arica", "Camarones", "Putre", "General Lagos"]
         },
         {
